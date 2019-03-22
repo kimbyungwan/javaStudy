@@ -5,12 +5,12 @@ public class BloodHouse {
 		 int age = 0; // ÇåÇ÷ÀÚÀÇ ³ªÀÌ¸¦ È®ÀÎÇÏ¿© ÀúÀå
 		 boolean isPossible = false; // ÇåÇ÷ °¡´É ¿©ºÎ
 		 
-		 age = human.getAge();
+		 age = human.getAge(); // ³ªÀÌ °ª
 		 /* ³Ñ°Ü¹ŞÀº Human Å¬·¡½º·ÎºÎÅÍ age Á¤º¸ È®ÀÎ age = ? */
 		 			 
-		 if(age >= 16 && age <= 69){
+		 if(age >= 16 && age <= 69) {
+			 isPossible = true;
 		 }
-		 isPossible = true;
 		 
 		 /* age°¡ 16¼¼ ÀÌ»ó 69¼¼ ÀÌÇÏ ÀÏ¶§¸¸ ÇåÇ÷ °¡´ÉÇÏµµ·Ï Á¶°Ç¹® ÀÛ¼º */
 		 return isPossible;
@@ -20,12 +20,12 @@ public class BloodHouse {
 		 String result = ""; // ÇåÇ÷ °á°ú ÀúÀå
 		 
 		 
+		 boolean isPossible = isPossible(human);
 		 /* isPossible() ¸Ş¼Òµå¸¦ È°¿ëÇÏ¿© ÇåÇ÷ °¡´É ¿©ºÎ¸¦ È®ÀÎÇÏ´Â Á¶°Ç¹® ÀÛ¼º */
-		
-		 if(isPossible(human) == true) {
-			 System.out.println("ÇåÇ÷ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. XX´Ô °¨»çÇÕ´Ï´Ù.");
+		 if(isPossible) {
+			 result = ("ÇåÇ÷ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. " + human.getName() + "´Ô °¨»çÇÕ´Ï´Ù.");
 		 }else {
-			 System.out.println("ÇåÇ÷ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.");
+			 result = ("ÇåÇ÷ÀÌ ºÒ°¡´ÉÇÕ´Ï´Ù.");
 		 }
 		 
 		 /* ÇåÇ÷ °¡´É ½Ã result = "ÇåÇ÷ÀÌ ¿Ï·áµÇ¾ú½À´Ï´Ù. XX´Ô °¨»çÇÕ´Ï´Ù. */
