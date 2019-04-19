@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 
 import oracle.jdbc.driver.OracleDriver;
 
-public class DBconnection {
+public class BasicDBconnection {
 	private Connection conn;
 	private PreparedStatement Pstmt;
 	private ResultSet rs;
@@ -48,7 +48,7 @@ public class DBconnection {
 	}
 
 	public static void main(String[] args) throws Exception {
-		DBconnection dbc = new DBconnection();
+		BasicDBconnection dbc = new BasicDBconnection();
 		dbc.connect();
 	}
 }

@@ -1,7 +1,9 @@
 package com.kopo.human;
 
-public class Elec {
-	public void volumeUp(){
-		System.out.println("ÀÌ");
-	}
+public interface Elec {	
+	
+	public void volumeUp();
+	
+	public void volumeDown();
+
 }
